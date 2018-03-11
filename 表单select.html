@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单select</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1 align="center">注册信息</h1>
+	<hr color ="#336699"/>
+<form>
+	<table width="600px" bgcolor="#f2f2f2" align="center">
+		<tr>
+			<td>姓名：</td>
+			<td><input type="text"  name="username size="25"  maxlength="6" placeholder="请输入姓名" /></td>
+		</tr>
+<tr>
+	<td>邮箱:</td>
+	<td><input type="text" name="emale" value="@163.com"/ ></td>
+</tr>
+<tr>
+	<td>密码：</td>
+	<td><input type="password" name="username" size="25" maxlength="6" placeholder="请输入密码"></td>
+</tr>
+<tr>
+	<td>确认密码：</td>
+	<td><input type="password" name="paw_confirm" size="25" maxlength="6" placeholder="请确认密码"></td>	
+</tr>
+<tr>
+		<td>上传照片:</td>
+		<td><input type="file"  name="file" placeholder="选择文件"></td>
+	</tr>
+<tr>
+	<td>性别：</td>
+	<td>男<input type="radio" name="sex" value="man" /></td>
+	<td>女<input type="radio" name="sex" value="woman" /></td>
+    <td>保密<input type="radio" name="sex" value="bm"  checked="" /></td>
+</tr>
+<tr>
+	<td>爱好:</td>
+	<td>跳舞<input type="checkbox" name="dx1" value="跳舞" checked=""> </td>
+	<td>读书<input type="checkbox" name="dx1" value="读书" > </td>
+	<td>唱歌<input type="checkbox" name="dx1" value="唱歌"> </td>
+	</tr>
+<tr>
+	<tr>
+	<td>爱好的运动</td>
+	<td>跑步<input type="checkbox" name="dx1" value="跳舞" checked=""> </td>
+	<td>游泳<input type="checkbox" name="dx1" value="读书" > </td>
+	<td>篮球<input type="checkbox" name="dx1" value="唱歌"> </td>
+	</tr>
+	tr>
+	<tr>
+	<td>城市：</td>
+	<td>
+		<select name="city" >
+			<option>请选择</option>
+<option value="广州" selected>广州</option>
+<option value="sz">深圳</option>
+<option value="dg">东莞</option>
+<option value="mz">梅州</option>
+<option value="jm">江门</option>
+<option value="zh">珠海</option>
+<option value="fs">佛山</option>
+<option value="hz"> 惠州</option>
+		</select>
+<select name="city" size="6" multiple>
+<option value="广州">广州</option>
+<option value="sz">深圳</option>
+<option value="dg">东莞</option>
+<option value="mz">梅州</option>
+<option value="jm">江门</option>
+<option value=="hz"> 惠州</option>
+<option value="fs">佛山</option>
+<option value=zh">珠海</option>
+</select>
+<select name="city" size="5" >
+	<option>--请选择--</option>
+	<optgroup label="大城市">
+<option value="广州" selected="">广州</option>
+<option value="sz">深圳</option>
+<option value="dg">东莞</option>
+<option value="mz">梅州</option>
+</optgroup>
+  <optgroup label="小城市">
+  <option value="jm">江门</option>
+<option value=="hz"> 惠州</option>
+<option value="fs">佛山</option>
+<option value=zh">珠海</option>
+</optgroup>
+</select>
+</td>
+<tr>
+	<td><input type="buttom" value="来点我" name="button" ></td>
+<td><input type="submit" value="submit" name="submit" ></td>
+<td><input type="reset" value="reset"  name="reset"></td>
+<input type="image" name="imagebutton" src="E:\Photo-woman/4.jpg" width="20%" align="center">
+
+</tr>
+<td><input type="hidden" name="hidden" value="这是一用户注册信息"></td>
+<td></td>
+	</table>
+
+
+</form>
+</body>
+</html>
