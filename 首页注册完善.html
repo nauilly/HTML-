@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页注册完善</title>
+	</head>
+	<script>
+		/*function showtips(){
+			document.getElementById("userspan").innerHTML="<font color='grey'>用户名必写</font>";
+		}
+		function check(){
+			//1.获取用户的数据
+			var uValue= document.getElementById("user").value;
+			//2.检验用户数据
+			if(uValue==""){
+				document.getElementById("userspan").innerHTML="<font color='red'>用户名不能为空！</font>";
+			}else{
+				document.getElementById("userspan").innerHTML="";
+			}
+		}*/
+		function showtips(id,info){
+			document.getElementById(id+"span").innerHTML="<font color='grey'>"+info+"</font>";
+		}
+		function check(id,info){
+			//1.获取用户的数据
+			var uValue= document.getElementById(id).value;
+			//2.检验用户数据
+			if(uValue==""){
+				document.getElementById(id+"span").innerHTML="<font color='red'>用户名不能为空！</font>";
+			}else{
+				document.getElementById(id+"span").innerHTML="";
+			}
+		}
+	</script>
+	<body>
+		<h1 align="center">注册信息</h1>
+	<hr color ="#336699"/>
+		<form  action="#" method="get" name="reform" onsubmit="return checkForm()">
+			<table width="600px" align="center" bgcolor="#f2f2f2">
+				<tr>
+					<td>用户名：</td>
+					<td><input  type="text" id="user" name="user" onfocus="showtips('user','用户名必写')" onblur="check('user','用户名不为空')" </td><span id="userspan"></span>
+				</tr>
+				<tr>
+					<td>密码：</td>
+<td><input type="text" id="password" name="password" maxlength="15" onfocus="showtips('password','密码必写')" onblur="check('password','密码不为空!')"></td><span id="passwordspan"></span>
+					
+				</tr>
+				<tr></tr>
+				<td>确认密码：</td>
+				<td><input type="text" id="rpassword" name="rpassword" size="25" maxlength="15"  </td>
+				
+				</tr>
+				<tr>
+					<td>邮箱：</td>
+					<td><input type="text" id="emile" name="emile" value="@163.com"></td>
+				</tr>
+				<tr>
+					<td>上传文件：</td>
+					<td><input type="file" name="file" ></td>
+				</tr>
+				<tr>
+					<td>性别：</td>
+					<td>男<input type="radio" name="sex" value="man"</td>
+					<td>女<input type="radio" name="sex" value="woman"</td>
+					<td>保密<input type="radio" name="sex" value="both"</td>
+				</tr>
+				<tr>
+					<td>联系电话：</td>
+					<td><input type="text" size="15" maxlength="20"></td>
+				</tr>
+				<tr>
+					<td style="text-align: ringht;">个人介绍：</td>
+					<td colspan="2"><textarea class="textarea" name="introduce"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="image" src="img/signup.gif" border="0"</td>
+				</tr>
+			</table>
+			
+			
+			
+			
+		</form>
+	</body>
+</html>
